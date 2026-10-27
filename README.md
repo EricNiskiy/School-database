@@ -1,1 +1,1 @@
-Código de um colégio hipotético desenvolvido para entrega de atividade da disciplina de Banco de Dados cursada na Uninove.<br>A IDE utilizada para o desenvolvimento foi Oracle Live SQL.
+Código de um colégio fictício desenvolvido para disciplina de modelagem e desenvolvimento de banco de dados na Universidade Nove de Julho (UNINOVE).<br>A IDE utilizada para o desenvolvimento foi Oracle Live SQL.
