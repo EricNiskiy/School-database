@@ -1,0 +1,84 @@
+-- INSERÇÕES TURMAS
+insert into Turmas values (38, '4º', 'A', 2022, 'Manhã');
+insert into Turmas values (39, '5º', 'B', 2023, 'Tarde');
+insert into Turmas values (40, '7º', 'C', 2023, 'Manhã');
+insert into Turmas values (41, '8º', 'A', 2023, 'Tarde');
+insert into Turmas values (42, '6º', 'D', 2023, 'Manhã');
+
+-- INSERÇÕES USUARIOS
+	-- PROFESSORES
+insert into Usuarios values (2020569887, 'Professora', 'abc1234', 'Jorgina', 'jorgina.santos@cjs.edu.br', '(11) 99999-1000');
+insert into Usuarios values (2222204885, 'Professora', 'abc1234', 'Marina', 'mari@cjs.edu.br', '(11) 99999-9999');
+insert into Usuarios values (2222204888, 'Professora', 'abc1234', 'Márcia', 'marcinha@cjs.edu.br', '(11) 99999-1001');
+insert into Usuarios values (2222204889, 'Professor', 'abc1234', 'Robson', 'rob@cjs.edu.br', '(11) 99999-1002');
+insert into Usuarios values (2222204886, 'Professora', 'abc1234', 'Linda', 'linda@cjs.edu.br', '(11) 99999-1003');
+insert into Usuarios values (2222204884, 'Professor', 'abc1234', 'Cleber', 'cleb@cjs.edu.br', '(11) 99999-1004');
+insert into Usuarios values (5555555555, 'Auxiliar Adm', 'xxxyyy', 'Chico Bento', 'chico1000@cjs.edu.br', '(11) 99999-1008');
+insert into Usuarios values (9999999999, 'Diretor', 'xxxyyy', 'Eduardo Costa', 'eduardo.costa@cjs.edu.br', '(11) 99999-1009');
+	-- ALUNOS
+insert into Usuarios values (2222204880, 'Aluno', 'abcd1234', 'Geovanna Vieira', 'geovanna.lascouse@cjs.edu.br', '(11) 99999-9998');
+insert into Usuarios values (2222204890, 'Aluno', 'abcd1234', 'Eric Castro', 'eric.castro@cjs.edu.br', '(11) 99999-1006');
+insert into Usuarios values (2222204891, 'Aluno', 'abcd1234', 'Rodrigo Mendes', 'rodrigo039@cjs.edu.br', '(11) 99999-1007');
+
+-- INSERÇÕES CRONOGRAMA
+insert into Cronograma values (1, 2020569887, 'Português', 40, 'Segunda', 1);
+insert into Cronograma values (2, 2020569887, 'Inglês', 40, 'Segunda', 2);
+insert into Cronograma values (3, 2222204888, 'Matemática', 40, 'Segunda', 3);
+insert into Cronograma values (4, 2222204888, 'Matemática', 40, 'Quinta', 1);
+insert into Cronograma values (5, 2222204889, 'Geografia', 40, 'Segunda', 4);
+insert into Cronograma values (6, 2222204885, 'Filosofia', 40, 'Terça', 1);
+insert into Cronograma values (7, 2222204885, 'Filosofia', 40, 'Terça', 2);
+insert into Cronograma values (8, 2222204885, 'História', 40, 'Terça', 3);
+insert into Cronograma values (9, 2020569887, 'Inglês', 41, 'Segunda', 1);
+insert into Cronograma values (10, 2222204884, 'História', 41, 'Segunda', 2);
+insert into Cronograma values (11, 2222204884, 'Geografia', 41, 'Segunda', 3);
+insert into Cronograma values (12, 2222204885, 'Português', 41, 'Segunda', 4);
+insert into Cronograma values (13, 2222204885, 'Filosofia', 41, 'Segunda', 5);
+insert into Cronograma values (14, 2222204886, 'Matemática', 41, 'Terça', 1);
+insert into Cronograma values (15, 2020569887, 'Português', 39, 'Segunda', 1);
+insert into Cronograma values (16, 2020569887, 'Português', 39, 'Segunda', 2);
+insert into Cronograma values (17, 2020569887, 'Português', 42, 'Segunda', 1);
+insert into Cronograma values (18, 2020569887, 'Inglês', 42, 'Quarta', 1);
+insert into Cronograma values (19, 2222204888, 'Matemática', 42, 'Segunda', 2);
+insert into Cronograma values (20, 2222204888, 'Matemática', 42, 'Quinta', 1);
+insert into Cronograma values (21, 2020569887, 'Inglês', 39, 'Terça', 1);
+insert into Cronograma values (22, 2222204885, 'Português', 41, 'Terça', 2);
+insert into Cronograma values (23, 2222204885, 'Português', 41, 'Terça', 3);
+insert into Cronograma values (24, 2222204884, 'Geografia', 39, 'Quarta', 1);
+insert into Cronograma values (25, 2222204885, 'História', 39, 'Sexta', 1);
+insert into Cronograma values (26, 2222204889, 'Geografia', 40, 'Quinta', 2);
+insert into Cronograma values (27, 2222204889, 'Geografia', 40, 'Sexta', 1);
+insert into Cronograma values (28, 2222204889, 'Geografia', 42, 'Segunda', 3);
+insert into Cronograma values (29, 2222204889, 'Geografia', 42, 'Segunda', 4);
+insert into Cronograma values (30, 2222204889, 'Geografia', 42, 'Quarta', 2);
+insert into Cronograma values (31, 2222204885, 'Filosofia', 42, 'Sexta', 1);
+insert into Cronograma values (32, 2222204884, 'História', 42, 'Quinta', 2);
+insert into Cronograma values (33, 2222204888, 'Matemática', 39, 'Quinta', 1);
+insert into Cronograma values (34, 2222204888, 'Matemática', 39, 'Quinta', 2);
+insert into Cronograma values (35, 2222204888, 'Matemática', 39, 'Terça', 2);
+insert into Cronograma values (36, 2222204888, 'Matemática', 39, 'Segunda', 3);
+
+-- INSERÇÕES BOLETIM
+insert into Boletim values (1, 2222204880, 'Português', 2, 10, 9, 9.5, 3, 15, 'Aprovado', 40);
+insert into Boletim values (2, 2222204880, 'Matemática', 2, 8, 7, 7.5, 0, 15, 'Aprovado', 40);
+insert into Boletim values (3, 2222204880, 'Matemática', 1, 9, 8.5, 7.5, 0, 15, 'Aprovado', 38);
+insert into Boletim values (4, 2222204890, 'Geografia', 3, 6.5, 8.2, 7.35, 1, 10, 'Aprovado', 41);
+insert into Boletim values (5, 2222204890, 'História', 4, 7, 10, 8.5, 2, 10, 'Aprovado', 41);
+insert into Boletim values (6, 2222204890, 'Português', 4, 8, 10, 9, 4, 15,	'Aprovado', 41);
+
+
+-- 3: INSERÇÕES CONTATOS
+insert into Contatos values (1, 'davicosta@gmail.com', '(11) 98888-8888', 'Matrícula', to_date('22/09/2023', 'DD/MM/YYYY'));
+insert into Contatos (id, email, mensagem, dia) values (2, 'lucy22@gmail.com', 'Documentação', to_date('17/12/2023', 'DD/MM/YYYY'));
+insert into Contatos (id, telefone, mensagem, dia) values (3, '(11) 99876-5432', 'Documentação', to_date('21/11/2023', 'DD/MM/YYYY'));
+
+-- INSERÇÕES OCORRÊNCIAS
+insert into Ocorrencias values (100, 'Quebrou nariz do colega', to_date('31/08/2023', 'DD/MM/YYYY'));
+insert into Ocorrencias_alunos values (100, 2222204890);
+insert into Ocorrencias_alunos values (100, 2222204891);
+
+insert into Ocorrencias values (101, 'Passou mal', to_date('22/10/2023', 'DD/MM/YYYY'));
+insert into Ocorrencias_alunos values (101, 2222204880);
+
+insert into Ocorrencias values (102, 'Riscou a mesa', to_date('12/09/2023', 'DD/MM/YYYY'));
+insert into Ocorrencias_alunos values (102, 2222204890);

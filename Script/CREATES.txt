@@ -1,0 +1,68 @@
+CREATE TABLE Turmas (
+    id int primary key not null,
+    ano char(3) not null,
+    serie char(1) not null,
+    data_ano int not null,
+    turno varchar(10) not null,
+    unique (ano, serie, data_ano)
+);
+
+CREATE TABLE Usuarios (
+    rs_ra int primary key not null,
+    cargo varchar(15) not null,
+    senha varchar(15) not null,
+    nome varchar(40) not null,
+    email varchar(30) not null unique,
+	telefone varchar(30) not null unique
+);
+
+
+CREATE TABLE Cronograma (
+    id int primary key not null,
+    rs_prof int not null,
+    disciplina varchar(20) not null,
+    id_turma int not null,
+    dia_semana varchar(15) not null,
+    ordem int not null,
+    unique (id_turma, dia_semana, ordem),
+    foreign key (id_turma) references Turmas (id),
+    foreign key (rs_prof) references Usuarios (rs_ra) ON delete cascade
+);
+
+CREATE TABLE Boletim (
+    id int primary key not null,
+    ra int,
+    disciplina varchar (20),
+    bimestre int,
+    av1 float,
+	av2 float,
+    media float,
+    faltas int,
+    limite_faltas int,
+    situacao varchar(20),
+    id_turma int,
+    foreign key (ra) references Usuarios (rs_ra),
+    foreign key (id_turma) references Turmas (id)
+);
+
+CREATE TABLE Ocorrencias(
+    id int primary key not null,
+    observacoes varchar(100) not null,
+    data_ocor date not null
+);
+
+CREATE TABLE Ocorrencias_alunos(
+    id_ocor int not null,
+    ra int not null,
+    unique (id_ocor, ra),
+    foreign key (id_ocor) references Ocorrencias (id) ON delete cascade,
+    foreign key (ra) references Usuarios (rs_ra)
+);
+
+CREATE TABLE Contatos (
+    id int primary key not null,
+    email varchar(30),
+    telefone varchar(20),
+    mensagem varchar(30) not null,
+    dia date not null
+);
